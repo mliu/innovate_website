@@ -1,9 +1,13 @@
 @import "twitter/bootstrap";
 
-.navbar-override{
-  border-radius:0 !important;
+.navbar-border{
+border-radius:0 !important;
 }
 
-.active{
-  color:#000 !important;
+.navbar-active{
+  background-color:#000 !important;
+}
+
+.navbar-content{
+  padding-left:25% !important;
 }

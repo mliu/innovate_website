@@ -1,17 +1,17 @@
 / House image
 
-%nav{class: "navbar navbar-default navbar-inverse navbar-override", role: "navigation"}
+%nav{class: "navbar navbar-default navbar-inverse navbar-border", role: "navigation"}
   / Logo
 
   /Nav
-  %ul{class: "nav navbar-nav"}
-    %li{class: "#{' active' if current_page?(root_path)}"}
+  %ul{class: "nav navbar-nav navbar-content"}
+    %li{class: "#{' navbar-active' if current_page?(root_path)}"}
       =link_to "Home", root_path
-    %li{class: "#{' active' if current_page?(about_path)}"}
+    %li{class: "#{' navbar-active' if current_page?(about_path)}"}
       =link_to "About", about_path
-    %li{class: "#{' active' if current_page?(users_path)}"}
+    %li{class: "#{' navbar-active' if current_page?(users_path)}"}
       =link_to "People", users_path
-    %li{class: "#{' active' if current_page?(fellow_path)}"}
+    %li{class: "#{' navbar-active' if current_page?(fellow_path)}"}
       =link_to "Faculty Fellows", fellow_path
-    %li{class: "#{' active' if current_page?(contact_path)}"}
+    %li{class: "#{' navbar-active' if current_page?(contact_path)}"}
       =link_to "Contact", contact_path

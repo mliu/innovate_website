@@ -10,4 +10,7 @@ class InfoController < ApplicationController
 
   def contact
   end
+
+  def cover
+  end
 end
