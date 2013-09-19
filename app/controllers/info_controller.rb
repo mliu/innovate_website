@@ -12,5 +12,6 @@ class InfoController < ApplicationController
   end
 
   def cover
+   @disable_header = true
   end
 end
