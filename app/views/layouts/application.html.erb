@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<%= render 'layouts/headerimg' unless @disable_header %>
 <%= render 'layouts/header' unless @disable_header %>
 <%= yield %>
 
