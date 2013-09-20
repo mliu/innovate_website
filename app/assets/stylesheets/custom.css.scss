@@ -22,6 +22,10 @@
 }
 
 /*Navbar*/
+.navbar{
+  margin-bottom:0 !important;
+}
+
 .navbar-border{
   border-radius:0 !important;
 }
@@ -46,6 +50,7 @@
 .nav > li > a{
   padding:20px 30px !important;
 }
+
 
 /*Cover*/
 
@@ -124,4 +129,34 @@
     left:50%;
     margin-left:-690px;
   }
+
+  .home-img{
+    right:50%;
+    margin-right:-690px;
+  }
 }
+
+/* Home */
+
+.home-img{
+  min-width:1380px;
+  height:auto;
+  width:100%;
+  z-index:5;
+  position:absolute;
+}
+
+.home-img-overlay{
+  width:500px;
+  height:500px;
+  background-color:#C0C0C0;
+  opacity:1;
+  z-index:10;
+  top:0;
+}
+
+/*.home-img-overlay:after{
+  transform:rotate(10deg);
+  -moz-transform:rotate(10deg);
+  -webkit-transform:rotate(10deg);
+}*/
