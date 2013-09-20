@@ -1,1 +1,8 @@
-%img{src: "#{image_path('cover.jpg')}", class: "cover-img"}
+.div{style: "overflow:hidden"}
+  %img{src: "#{image_path('cover.jpg')}", class: "cover-img"}
+  =link_to home_path do
+    .cover-module
+      .cover-module-inner
+        Enter Innovate
+      .cover-module-button
+        %i{class: "icon-double-angle-right icon-4x"}
