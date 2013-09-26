@@ -142,21 +142,24 @@
   min-width:1380px;
   height:auto;
   width:100%;
-  z-index:5;
+  z-index:-1;
   position:absolute;
 }
 
-.home-img-overlay{
-  width:500px;
-  height:500px;
-  background-color:#C0C0C0;
-  opacity:1;
+.overlay{
   z-index:10;
-  top:0;
+  opacity:0.5;
 }
 
-/*.home-img-overlay:after{
-  transform:rotate(10deg);
-  -moz-transform:rotate(10deg);
-  -webkit-transform:rotate(10deg);
-}*/
+.home-img-overlay{
+  width:100%;
+  height:550px;
+  background-color:#C0C0C0;
+  opacity:.5;
+  top:0;
+  z-index:10;
+  overflow:hidden;
+  transform:skewX(-60deg);
+  -moz-transform:skewX(-60deg);
+  -webkit-transform:rotate(-60deg);
+}

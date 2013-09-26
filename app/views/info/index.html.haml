@@ -1,2 +1,42 @@
-%img.home-img{src: "#{image_path('home_header.jpg')}"}
-  .home-img-overlay
+/ %img.home-img{src: "#{image_path('home_header.jpg')}"}
+/ %img.home-img.overlay{src: "#{image_path('overlay.png')}"}
+%script{type: "text/javascript", src: "javascript/carousel.js"}
+.flexslider
+  %ul.slides
+    %li
+      %img{src: "#{image_path('carousel_home.png')}"}
+      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+        Captian
+    %li
+      %img{src: "#{image_path('carousel_talk.png')}"}
+      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+        Captian2
+    %li
+      %img{src: "#{image_path('carousel_study.png')}"}
+      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+        Captian3
+
+/ %div{style: "height:600px; overflow:auto; margin-right:auto; margin-left:auto;"}
+/   #myCarousel.carousel.slide{}
+/     %script{type: "text/javascript", src: "javascript/carousel.js"}
+/     / %script{type: "text/javascript"}
+/     /   $('.carousel').carousel();
+/     / %ol.carousel-indicators
+/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "0", class: "active"}
+/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "1", class: ""}
+/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "2", class: ""}
+/     .carousel-inner
+/       .item.active
+/         %img{src: "#{image_path('home_header.jpg')}"}
+/         %p.carousel-caption
+/           Sup.
+
+/       .item
+/         %img{src: "#{image_path('talk_header.jpg')}"}
+/         %p.carousel-caption
+/           Hey.
+
+/       .item
+/         %img{src: ""}
+/         %p.carousel-caption
+/           Yo.

@@ -40,6 +40,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.1)
+    flexslider (2.0.2)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
@@ -124,6 +125,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass-rails
   coffee-rails (~> 4.0.0)
+  flexslider
   font-awesome-sass-rails
   haml
   jbuilder (~> 1.2)
