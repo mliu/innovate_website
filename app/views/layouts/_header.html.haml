@@ -1,18 +1,18 @@
 / House image
+.master_container
+  %nav{class: "navbar navbar-default navbar-inverse navbar-border", role: "navigation"}
+    / Logo
 
-%nav{class: "navbar navbar-default navbar-inverse navbar-border", role: "navigation"}
-  / Logo
-
-  /Nav
-  .navbar-content
-    %ul{class: "nav navbar-nav navbar-text"}
-      %li{class: "#{' navbar-active' if current_page?(home_path)}"}
-        =link_to "Home", home_path
-      %li{class: "#{' navbar-active' if current_page?(about_path)}"}
-        =link_to "About", about_path
-      %li{class: "#{' navbar-active' if current_page?(users_path)}"}
-        =link_to "People", users_path
-      %li{class: "#{' navbar-active' if current_page?(fellow_path)}"}
-        =link_to "Faculty Fellows", fellow_path
-      %li{class: "#{' navbar-active' if current_page?(contact_path)}"}
-        =link_to "Contact", contact_path
+    /Nav
+    .navbar-content
+      %ul{class: "nav navbar-nav navbar-text"}
+        %li{class: "#{' navbar-active' if current_page?(home_path)}"}
+          =link_to "Home", home_path
+        %li{class: "#{' navbar-active' if current_page?(about_path)}"}
+          =link_to "About", about_path
+        %li{class: "#{' navbar-active' if current_page?(users_path)}"}
+          =link_to "People", users_path
+        %li{class: "#{' navbar-active' if current_page?(fellow_path)}"}
+          =link_to "Faculty Fellows", fellow_path
+        %li{class: "#{' navbar-active' if current_page?(contact_path)}"}
+          =link_to "Contact", contact_path

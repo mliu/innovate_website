@@ -2,22 +2,33 @@
 / %img.home-img.overlay{src: "#{image_path('overlay.png')}"}
 
 
+.master_container
+  %script{type: "text/javascript", src: "javascript/carousel.js"}
+  .flexslider
+    %ul.slides
+      %li
+        %img{src: "#{image_path('carousel_home.png')}"}
+        %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+          Captian
+      %li
+        %img{src: "#{image_path('carousel_talk.png')}"}
+        %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+          Captian2
+      %li
+        %img{src: "#{image_path('carousel_study.png')}"}
+        %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+          Captian3
 
-%script{type: "text/javascript", src: "javascript/carousel.js"}
-.flexslider
-  %ul.slides
-    %li
-      %img{src: "#{image_path('carousel_home.png')}"}
-      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        Captian
-    %li
-      %img{src: "#{image_path('carousel_talk.png')}"}
-      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        Captian2
-    %li
-      %img{src: "#{image_path('carousel_study.png')}"}
-      %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        Captian3
+  .home_wrap
+    .home_wrap_right-header
+      Welcome to Innovate
+    .home_wrap_right-text
+      Virginia Tech’s newest living-learning community, Innovate, offers 35 students the opportunity to engage their entrepreneurial spirit in a high-energy team setting. This dynamic living-learning environment, located in a stand-alone house at 2475 Oak Lane, brings together students from a wide variety of majors and interests to create new ideas and help launch student-led entrepreneurial ventures. Students in the community will experience Virginia Tech in a unique and exciting way, pushing their imaginations to the limit, and inspiring the Hokie community to dream big and actualize its innovative potential!
+    %br
+    %br
+    .home_wrap_right-header
+      Who we are
+    .home_wrap_right-text
 
 / %div{style: "height:600px; overflow:auto; margin-right:auto; margin-left:auto;"}
 /   #myCarousel.carousel.slide{}
