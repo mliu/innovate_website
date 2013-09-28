@@ -9,8 +9,14 @@
 </head>
 <body>
 
-<%= render 'layouts/header' unless @disable_header %>
-<%= yield %>
+<div id="wrap">
+  <div id="main">
+    <%= render 'layouts/header' unless @disable_header %>
+    <%= yield %>
+  </div>
+</div>
+
+<%= render 'layouts/footer' unless @disable_header %>
 
 </body>
 </html>

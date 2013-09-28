@@ -23,6 +23,11 @@ html *{
 
 html{
   overflow-y:scroll;
+  height:100%;
+}
+
+body{
+  height:100%;
 }
 
 /*User*/
@@ -108,6 +113,57 @@ html{
   font-size:1.5em;
 }
 
+/*footer*/
+#wrap{
+  min-height:100%;
+}
+
+#main{
+  overflow:auto;
+  padding-bottom:100px;
+}
+
+.footer{
+  position: relative;
+  margin-top:-100px;
+  height:100px;
+  clear:both;
+  padding-top:20px;
+}
+
+.footer_content{
+  width:70%;
+  /*min-width:400px;*/
+  border-top:1px solid #606060;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer_content-left{
+  width:100px;
+  text-align:left;
+}
+
+.footer_content-right{
+  margin-right:10px;
+  text-align:right;
+  font-size:small;
+  margin-top:-36px;
+}
+
+.footer_content-icon{
+  margin-top:5px;
+  margin-right:5px;
+  cursor:pointer;
+  padding:10px;
+  background-color:#E8E8E8;
+  width:36px;
+  display:inline-block;
+}
+
+.footer_content-icon:hover{
+  background-color:#D0D0D0;
+}
 
 /*Centering*/
 
@@ -133,7 +189,7 @@ html{
   background-color:#fff !important;
   border:0 !important;
   min-height:40px !important;
-  border-bottom:1px solid #000 !important;
+  border-bottom:1px solid #606060 !important;
 }
 
 .navbar-border{
@@ -174,6 +230,7 @@ html{
   background-color: rgb(72, 72, 72);
   background-color: rgba(72, 72, 72, 0.8);
   width:50%;
+  min-width:450px;
   height:90px;
   z-index:5;
   top:83%;
