@@ -4,7 +4,7 @@
 //   });
 // });
 
-$(window).load(function() {
+$(document).ready(function() {
     $('.flexslider').flexslider({
       animation: "slide",
       direction: "vertical",
@@ -12,6 +12,8 @@ $(window).load(function() {
       controlNav: true,
       directionNav: false,
       prevText: "",
-      nextText: ""
+      nextText: "",
+      slideshowSpeed: 2500,
+      initDelay: 0
     });
 });

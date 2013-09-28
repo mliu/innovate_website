@@ -13,6 +13,7 @@ group :production, :staging do
   gem 'rails_12factor'
 end
 
+gem 'jquery-turbolinks'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

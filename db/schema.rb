@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20130916135644) do
     t.string   "name"
     t.string   "bio"
     t.string   "major"
-    t.boolean  "officer"
+    t.string   "group",      default: "member"
     t.string   "position",   default: ""
     t.datetime "created_at"
     t.datetime "updated_at"
