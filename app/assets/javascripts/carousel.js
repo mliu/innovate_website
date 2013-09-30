@@ -14,6 +14,6 @@ $(document).on('page:load page:change ready', function(){
       prevText: "",
       nextText: "",
       slideshowSpeed: 2500,
-      initDelay: 0
+      initDelay: 1000
     });
 });
