@@ -4,7 +4,7 @@
 //   });
 // });
 
-$(document).ready(function() {
+$.turbo.isReady(function() {
     $('.flexslider').flexslider({
       animation: "slide",
       direction: "vertical",
