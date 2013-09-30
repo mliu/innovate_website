@@ -4,7 +4,8 @@
 //   });
 // });
 
-$.turbo.isReady(function() {
+$(document).ready(function() {
+  if($.turbo.isReady == true){
     $('.flexslider').flexslider({
       animation: "slide",
       direction: "vertical",
@@ -16,4 +17,5 @@ $.turbo.isReady(function() {
       slideshowSpeed: 2500,
       initDelay: 0
     });
+  }
 });
