@@ -11,6 +11,6 @@
  *= require_self
  *= require_tree .
  *= require twitter/bootstrap
- *= require _font-awesome
+ *= require font-awesome
  *= require flexslider.css
  */

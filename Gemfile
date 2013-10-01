@@ -17,7 +17,7 @@ gem 'jquery-turbolinks'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-gem 'font-awesome-sass-rails'
+gem 'font-awesome-rails'
 
 gem 'flexslider'
 
