@@ -1,57 +1,38 @@
-/ %img.home-img{src: "#{image_path('home_header.jpg')}"}
-/ %img.home-img.overlay{src: "#{image_path('overlay.png')}"}
-
-
 .master_container
-  / %script{type: "text/javascript", src: "javascripts/carousel.js"}
-  .flexslider
-    %ul.slides
-      %li
-        %img{src: "#{image_path('carousel_home.png')}"}
-        / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        /   Captian
-      %li
-        %img{src: "#{image_path('carousel_talk.png')}"}
-        / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        /   Captian2
-      %li
-        %img{src: "#{image_path('carousel_study.png')}"}
-        / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
-        /   Captian3
-
   .home_wrap
-    .home_wrap_right-header
-      Welcome to Innovate
-    .home_wrap_right-text
-      Virginia Tech’s newest living-learning community, Innovate, offers 35 students the opportunity to engage their entrepreneurial spirit in a high-energy team setting. This dynamic living-learning environment, located in a stand-alone house at 2475 Oak Lane, brings together students from a wide variety of majors and interests to create new ideas and help launch student-led entrepreneurial ventures. Students in the community will experience Virginia Tech in a unique and exciting way, pushing their imaginations to the limit, and inspiring the Hokie community to dream big and actualize its innovative potential!
-    %br
-    %br
-    .home_wrap_right-header
-      What we are
-    .home_wrap_right-text
-      As innovaters, we work with successful entrepreneurs and professors to help make our ideas a reality. 
-
-/ %div{style: "height:600px; overflow:auto; margin-right:auto; margin-left:auto;"}
-/   #myCarousel.carousel.slide{}
-/     %script{type: "text/javascript", src: "javascript/carousel.js"}
-/     / %script{type: "text/javascript"}
-/     /   $('.carousel').carousel();
-/     / %ol.carousel-indicators
-/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "0", class: "active"}
-/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "1", class: ""}
-/     /   %li{"data-target:" "#myCarousel", "data-slide-to:" "2", class: ""}
-/     .carousel-inner
-/       .item.active
-/         %img{src: "#{image_path('home_header.jpg')}"}
-/         %p.carousel-caption
-/           Sup.
-
-/       .item
-/         %img{src: "#{image_path('talk_header.jpg')}"}
-/         %p.carousel-caption
-/           Hey.
-
-/       .item
-/         %img{src: ""}
-/         %p.carousel-caption
-/           Yo.
+    .home_wrap_left
+      .home_wrap_right-header
+        Welcome to Innovate
+      .home_wrap_right-text
+        Virginia Tech’s newest living-learning community, Innovate, offers 35 students the opportunity to engage their entrepreneurial spirit in a high-energy team setting. This dynamic living-learning environment, located in a stand-alone house at 2475 Oak Lane, brings together students from a wide variety of majors and interests to create new ideas and help launch student-led entrepreneurial ventures. 
+        / Students in the community will experience Virginia Tech in a unique and exciting way, pushing their imaginations to the limit, and inspiring the Hokie community to dream big and actualize its innovative potential!
+      %br
+      %br
+      %a.twitter-timeline{"data-widget-id" => "396390457317412864", :href => "https://twitter.com/InnovateVT"} Tweets by @InnovateVT
+      :javascript
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      %br
+    %img{src: "#{image_path('vert_line.png')}", style: "height: 700px; width:5px; position:absolute; overflow:hidden; margin-right:10px;"}
+    .home_wrap_right
+      .flexslider
+        %ul.slides
+          %li
+            %img{src: "#{image_path('carousel_home.png')}"}
+            / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+            /   Captian
+          %li
+            %img{src: "#{image_path('carousel_talk.png')}"}
+            / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+            /   Captian2
+          %li
+            %img{src: "#{image_path('carousel_study.png')}"}
+            / %p.flex-caption{style: "z-index: 10; margin-top:-19px; margin-bottom:0;"}
+            /   Captian3
+      %img.line{src: "#{image_path('line.png')}"}
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "380", :src => "//www.youtube.com/embed/y8Fgq2Iu2eA?theme=light", :width => "676"}
+      %br
+      / %br
+      / .home_wrap_right-header
+      /   About Us
+      / .home_wrap_right-text
+      /   Info about us stuff blah blah random text filler no ipsum ahoy
