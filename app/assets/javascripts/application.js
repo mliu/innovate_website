@@ -16,4 +16,4 @@
 //= require turbolinks
 //= require_tree .
 //= require twitter/bootstrap
-//= require flexslider
+//= require jquery.flexslider

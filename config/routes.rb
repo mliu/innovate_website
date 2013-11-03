@@ -1,6 +1,6 @@
 Innovate::Application.routes.draw do
   root 'info#cover'
-  get 'press' => 'info#press'
+  get 'press' => 'info#press  '
   get 'home' => 'info#index'
   get 'about' => 'info#about'
   get 'fellow' => 'info#fellow'
